@@ -1,0 +1,117 @@
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: black;
+}
+
+.mih1{
+    padding-top: 2rem;
+    font-family: "Roboto", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-stretch: extra-condensed;
+    font-size: 3.5rem;
+    color:ghostwhite;
+    animation: bounceInLeft; 
+    animation-duration: 2s
+ 
+}
+.mip{
+  font: 1.2em "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: rgb(168, 179, 230);
+  animation: backInRight; 
+  animation-duration: 2s
+}
+.mih2{
+ 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-weight: 700;   
+    font-size: 2.5rem;
+    color:black;
+}
+.mip2{
+  font: 1.2em "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black;
+}
+.mip3{
+  font: 1.2em "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black;
+  
+}
+.mip4{
+  font: 1.4em "Lucida Grande", Helvetica, Arial, sans-serif;
+  color: black;
+  
+}
+
+.navbar { 
+  background: linear-gradient(to right,white, #e8f7ff);
+  border-radius: 10px;
+}
+.navbar-text{
+  color: rgb(2, 1, 70) !important;
+  padding-right: 2rem;  
+  animation-name:flipInX;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  
+  
+}
+
+
+.jumbotron {
+  
+  margin-bottom: 2rem;
+  background-color: #e9ecef;
+  border-radius: .3rem;
+}
+.navbar-nav {
+  display: flex;
+  justify-content: left; /* Centra los elementos horizontalmente */
+  width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+.nav-item {
+  text-align: center; /* Asegura que el texto esté centrado */
+}
+
+.container-fluid{
+padding-left: 1 !important;
+padding-right: 1 !important;
+padding-top: 0 !important;
+padding-bottom: 0 !important;
+
+}
+#micard{
+  background-color: rgba(0, 0, 0, 0)  !important;  
+  max-width:100% !important; 
+  max-height:100% !important;
+  animation: fadeInUp  !important; 
+  animation-duration: 3s !important;
+}
+.miimg{
+  max-width: 10%;  
+  border-radius: 10%;
+  animation-name:flash !important;
+  animation-duration: 2s !important;
+  animation-iteration-count: infinite !important;
+  
+}
+.table{  
+   max-width:100%; 
+  max-height:100%;
+}
+
+.table-bordered {
+  border: 0.3rem solid rgb(8, 6, 94)  !important;
+  border-radius: 0.3rem !important;
+}
+
+.tr,td,th{
+  background-color: white !important; 
+  color: black  !important;
+  
+  
+} 

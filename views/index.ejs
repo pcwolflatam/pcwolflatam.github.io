@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <title>
+    <%= title %>
+  </title>
+
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.4.1/dist/css/bootstrap.min.css">
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+    integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+    crossorigin="anonymous"></script>
+  <script src="https://kit.fontawesome.com/42d766da1e.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
+</head>
+<body>
+  <div class="container-fluid" style="background-image: url('images/banner.jpg'); background-size: 100vw 100vh;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light sticky-top">
+      <img src="images/pcwolf logo.png" width="100" height="80">
+      <span class="navbar-text">PcWolf</span>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Servicios
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" style="font-size:small;" href="#software">Software</a>
+              <a class="dropdown-item" style="font-size:small;" href="#hardware">Hardware</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" style="font-size:small;" href="#cctv">Sistemas de Seguridad</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Productos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contacto">Contactanos</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="jumbotron" style="background-color: rgba(0, 0, 0, 0);">
+      <h1 class="mih1">Bienvenido a PcWolf</h1>
+      <div class="col-sm-8 pl-0">
+        <p class="mip text-justify pt-4" style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">Tu socio
+          confiable en soluciones tecnológicas; desde soporte técnico en equipos de
+          computación hasta instalación de redes y sistemas de seguridad. Destacamos por ofrecer
+          servicios tecnológicos de alta calidad, descubre nuestras áreas de especialización.</p>
+      </div>
+      <div class="row" style="padding-top: 2rem;">
+        <div class="col-sm-4">
+          <div class="card border-light mb-3" id="micard">
+            <div class="card-body">
+              <h5 class="card-title text-center"
+                style="color: white; font-size:medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><i
+                  class="fa fa-wrench pr-2" style="font-size:32px;color:lightskyblue"></i>Soporte Técnico Especializado
+              </h5>
+              <p class="card-text text-center"
+                style="color: rgb(168, 179, 230); font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Soluciones rápidas y efectivas para cualquier problema técnico, en todos sus equipos.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card border-light mb-3" id="micard">
+            <div class="card-body">
+              <h5 class="card-title text-center"
+                style="color: white;font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><i
+                  class="fas fa-laptop pr-2" style="font-size:32px;color:lightskyblue"></i>Software Personalizado</h5>
+              <p class="card-text text-center"
+                style="color: rgb(168, 179, 230); font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Instalación y configuración de programas adaptados a tus necesidades.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card border-light mb-3" id="micard">
+            <div class="card-body">
+              <h5 class="card-title text-center"
+                style="color: white; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><i
+                  class="fas fa-shield-alt  pr-2" style="font-size:32px;color:lightskyblue"></i>Sistemas de Seguridad
+              </h5>
+              <p class="card-text text-center"
+                style="color: rgb(168, 179, 230); font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Implementación de CCTV y herramientas para proteger tus espacios.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: white;">
+      <div class="row" style="padding-top: 2rem;">
+        <div class="col text-center">
+          <p class="mih2">Nuestras Habilidades </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center" style="padding-bottom: 2rem;">
+          <p class="mip2">Contamos con un conjunto de habilidades orientadas a solucionar
+            problemas y optimizar equipos y sistemas informáticos. </p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: white;">
+      <div class="row" style="padding-bottom: 1rem;">
+        <div class="col-sm-4" style="padding-left: 2rem;padding-right: 2rem;">
+          <div class="card border-dark mb-4"
+            style="background-color: rgba(0, 0, 0, 0); max-width:100%; max-height:100%;">
+            <div class="card-body">
+              <h5 class="card-title text-center"
+                style="color: black; font-size:medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><i
+                  class="fa fa-sitemap pr-2" style="font-size:32px;color:black"></i>Instalación de Redes
+              </h5>
+              <p class="card-text text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Configuración óptima para garantizar conectividad estable.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" style="padding-left: 2rem;padding-right: 2rem;">
+          <div class="card border-dark mb-3"
+            style="background-color: rgba(0, 0, 0, 0);max-width:100%; max-height:100%;">
+            <div class="card-body">
+              <h5 class="card-title text-center"
+                style="color: black;font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif"><i
+                  class="fa fa-microchip pr-2" style="font-size:32px;color:black"></i>Configuración de Hardware</h5>
+              <p class="card-text text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Optimización de equipos para un rendimiento superior.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" style="padding-left: 2rem;padding-right: 2rem;">
+          <div class="card border-dark mb-3"
+            style="background-color: rgba(0, 0, 0, 0);max-width:100%; max-height:100%;">
+            <div class="card-body">
+
+              <h5 class="card-title text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <i class="fa fa-user  pr-2" style="font-size:32px;color:black"></i>Asesorias On Line
+              </h5>
+              <p class="card-text text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Orientación técnica personalizada desde la comodidad de tu hogar.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" style="padding-left: 2rem;padding-right: 2rem;">
+          <div class="card border-dark mb-3"
+            style="background-color: rgba(0, 0, 0, 0);max-width:100%; max-height:100%;">
+            <div class="card-body">
+
+              <h5 class="card-title text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <i class="fa fa-cubes  pr-2" style="font-size:32px;color:black"></i>Productos y Repuestos
+              </h5>
+              <p class="card-text text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Equipos de última generación, Perifericos como teclados mouses y monitores, componentes para armar o
+                mejorar tu PC.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4" style="padding-left: 2rem;padding-right: 2rem;">
+          <div class="card border-dark mb-3"
+            style="background-color: rgba(0, 0, 0, 0);max-width:100%; max-height:100%;">
+            <div class="card-body">
+
+              <h5 class="card-title text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                <i class="fas fa-cogs pr-2" style="font-size:32px;color:black"></i>Mantenimiento Equipos de
+                Computación
+              </h5>
+              <p class="card-text text-center"
+                style="color: black; font-size: medium; font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif">
+                Realizarlo regularmente evita problemas futuros y también mejora la eficiencia y estabilidad de los
+                equipos.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: #e8f7ff;">
+      <div class="row" style="padding-top: 2rem;">
+        <div class="col text-center">
+          <p class="mih2">Cómo Trabajamos </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center">
+          <p class="mip3">Nuestro proceso te garantiza soluciones tecnológicas efectivas y
+            personalizadas. Sigue estos pasos: </p>
+        </div>
+      </div>
+      <div class="row pt-4 ">
+        <div class="col-sm-5 text-right">
+          <p style="display: inline;font-size:30px;color:rgb(40, 124, 177)"><i class="fa fa-search"></i></p>
+        </div>
+        <div class="col-sm-5 text-left">
+          <p class="mip4"><b>Evaluación Incial</b></p>
+          <p class="mip3">Analizamos tus necesidades tecnológicas para ofrecerte la mejor
+            solución.</p>
+          <div class="d-flex">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"></i></i>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"> </i></div>
+          </div>
+          <div class="d-flex" style="padding-bottom: 1rem;">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"> </i></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 text-right">
+          <p style="display: inline;font-size:30px;color:rgb(40, 124, 177)"><i class="fa fa-share-alt"></i></p>
+        </div>
+        <div class="col-sm-5 text-left">
+          <p class="mip4"><b>Planificación</b></p>
+          <p class="mip3">Analizamos tus necesidades tecnológicas requerimientos.</p>
+          <div class="d-flex">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"></i></i>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"> </i></div>
+          </div>
+          <div class="d-flex" style="padding-bottom: 1rem;">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"> </i></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 text-right">
+          <p style="display: inline;font-size:30px;color:rgb(40, 124, 177)"><i class="fa fa-cogs"></i></p>
+        </div>
+        <div class="col-sm-5 text-left">
+          <p class="mip4"><b>Implementación</b></p>
+          <p class="mip3">Instalamos y configuramos los servicios o equipos necesarios.</p>
+          <div class="d-flex">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"></i></i>
+            </div>
+          </div>
+          <div class="d-flex">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"> </i></div>
+          </div>
+          <div class="d-flex" style="padding-bottom: 1rem;">
+            <div class="vr" style="font: size 16px;color:rgb(63, 64, 65);animation-name: flash;animation-duration: 4s;animation-iteration-count: infinite;"><i class="fa fa-sort-down"> </i></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5 text-right">
+          <p style="display: inline;font-size:30px;color:rgb(40, 124, 177)"><i class="fa fa-briefcase"></i></p>
+        </div>
+        <div class="col-sm-5 text-left">
+          <p class="mip4"><b>Soporte Continuo</b></p>
+          <p class="mip3">Te acompañamos con mantenimiento y soporte técnico constante.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" style="background-color: white;">
+      <div class="row" style="padding-top: 3rem;">
+        <div class="col-sm-6 text-center">
+          <img src="images/mision.jpg" style="max-width: 80%; border-radius: 5%;">
+        </div>
+        <div class="col-sm-6 text-left">
+          <p
+            style="color:rgb(31, 108, 223);font-size:2rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; padding-top: 2rem;">
+            Comprometidos con la Excelencia Tecnológica</p>
+          <p class="mih2">Nuestra Misión</p>
+          <p
+            style="color:black;font-size:1.2rem;font-weight: 200;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+            En PcWolf, nuestra misión es proporcionar soluciones tecnológicas que impulsen tu productividad y
+            seguridad.</p>
+          <p
+            style="color:black;font-size:1.2rem;font-weight: 200;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+            Trabajamos con pasión para &nbsp garantizar que cada cliente reciba un servicio personalizado y de
+            calidad.</p>
+          <p
+            style="color:black;font-size:1.2rem;font-weight: 200;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 2rem;">
+            Creemos en la innovación constante como motor para ofrecerte las mejores herramientas tecnológicas.</p>
+          <hr>
+          <div class="row" style="padding-top: 1rem;">
+            <div class="col-sm-3 text-left">
+              <p
+                style="color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+                Clientes Satifechos</p>
+            </div>
+            <div class="col-sm-3 text-left">
+              <p
+                style="color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+                Proyectos Realizados</p>
+            </div>
+            <div class="col-sm-3 text-left">
+              <p
+                style="color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+                Años de Experiencia</p>
+            </div>
+            <div class="col-sm-3 text-left">
+              <p
+                style="color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+                Colaboraciones</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="container-fluid" id="software" style="background-color: white;">
+      <div class="row" style="padding-top: 6rem;">
+        <div class="col text-center">
+          <p class="mih2">Servicios de Software</p>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col" >
+          <table class="card table table-bordered table-borderless">
+            <thead>
+              <tr>
+                <th scope="col"><strong>Nro.</strong></th>
+                <th scope="col"><strong>Descripción</strong></th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Actualizaciones de Sistema Operativo</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Instalación Paquete Básico incluye Office, Foxit, Antivirus Defender y Navegadores</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Instalación Programa Básico Unitario como Antivirus o Navegador o Adobe Reader u Office, desde cero
+                  * Sin instalaciones previas en el equipo</td>
+
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Instalación de Paquete de programas Básicos</td>
+
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Instalación Individual de Programa Especializado como AutoCAD o CorelDraw o Ilustrator o Photoshop,
+                  desde cero
+                  * Sin instalaciones previas en el equipo</td>
+
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Instalación Sistema Operativo de Usuario (Windows, macOS y Linux)</td>
+
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Instalación y Configuración Dispositivo Local (Scanner, Impresora, Disco, Lector, Cámara entre
+                  otros)</td>
+
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Mantenimiento lógico Limpieza, Actualización y Depuración de Software para Laptop o Desktop</td>
+
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Migración de información y/o respaldo de Información hasta 50gb, no incluye medio (USB o Disco Duro
+                  HD) Incluye Datos, imágenes, video</td>
+
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Solución de problemas en Software (Reinstalaciones o Correcciones) por programa básico</td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Configuración Equipo en red Ethernet y/o Wifi (Dominio / Grupo de Trabajo)</td>
+
+              </tr>
+              <tr>
+                <th scope="row">12</th>
+                <td>Configuración de Modem, Router</td>
+
+              </tr>
+        </div>
+      </div>
+      </tbody>
+      </table>
+    </div>
+
+
+
+    <div class="container-fluid" id="hardware" style="background-color: white;">
+      <div class="row" style="padding-top: 6rem;">
+        <div class="col text-center">
+          <p class="mih2">Servicios de Hardware</p>
+        </div>
+      </div>
+      <div class="row">
+        
+        <div class="col">
+          <table class="card table table-bordered table-borderless" >
+            <thead>
+              <tr>
+                <th scope="col"><strong>Nro.</strong></th>
+                <th scope="col"><strong>Descripción</strong></th>
+
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">1</th>
+                <td>Cambio de pila de Litio 2032 (para Bios) no incluye medio</td>
+
+              </tr>
+              <tr>
+                <th scope="row">2</th>
+                <td>Instalación Componente (Memoria RAM, Batería interna, Disco Duro, Tarjeta Video, Wifi, etc.)</td>
+
+              </tr>
+              <tr>
+                <th scope="row">3</th>
+                <td>Mantenimiento físico Interno- con aplicación de pasta a Laptop o Desktop</td>
+
+              </tr>
+              <tr>
+                <th scope="row">4</th>
+                <td>Reemplazo Display, Teclado, Fuente de Poder, mousepad (mano de obra, no incluye componente)</td>
+
+              </tr>
+              <tr>
+                <th scope="row">5</th>
+                <td>Cambio de disco rígido por ssd e instalación de w11 servicio completo. no incluye ssd</td>
+
+              </tr>
+              <tr>
+                <th scope="row">6</th>
+                <td>Cambio de disco rígido por ssd y reinstalación de w10. no incluye ssd</td>
+
+              </tr>
+              <tr>
+                <th scope="row">7</th>
+                <td>Cambio, reemplazo, instalación o montaje de disco rígido o ssd en notebook, netbook o pc de
+                  escritorio</td>
+
+              </tr>
+              <tr>
+                <th scope="row">8</th>
+                <td>Instalación o Reubicación Física de Equipo Pc, Laptop, Impresora (no contempla material)</td>
+
+              </tr>
+              <tr>
+                <th scope="row">9</th>
+                <td>Inspección y Diagnóstico para instalación de rede LAN </td>
+
+              </tr>
+              <tr>
+                <th scope="row">10</th>
+                <td>Implementación de redes LAN (no contempla material) </td>
+
+              </tr>
+              <tr>
+                <th scope="row">11</th>
+                <td>Implementación de redes LAN (contempla material) </td>
+
+              </tr>
+
+        </div>
+      </div>
+      </tbody>
+      </table>
+    </div>
+
+
+
+
+    <div class="container-fluid" id="cctv" style="background-color: white;">
+      <div class="row" style="padding-top: 5rem;">
+        <div class="col text-center">
+          <p class="mih2">Sistemas de seguridad</p>
+        </div>
+      </div>
+      <div class="row" style="padding-top: 1rem;">
+        <div class="col-sm-4">
+          <div class="card" style="border: 0;padding-left: 2rem;">
+            <img class="card-img-top"  src="images/equiposcctv.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Instalación: Implementamos cámaras de seguridad Digitales y analógicas marca Dahua,Hikvisión entre otras. Cableado y equipos NVR,DVR,XVR , además de tener los mejores componentes de conexión del mercado.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="border: 0;">
+            <img class="card-img-top"  src="images/centrocontrol.png" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Evaluación y diseño: Analizan las necesidades del cliente para diseñar un sistema de vigilancia adecuado, considerando el área a cubrir, la calidad de imagen deseada y los riesgos específicos.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-4">
+          <div class="card" style="border: 0;">
+            <img class="card-img-top"  src="images/conexion.jpg" alt="Card image cap">
+            <div class="card-body">
+              <p class="card-text" style="text-align: justify;color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif">Configuración: Ajustan los sistemas para integrarse con redes existentes y permiten el acceso remoto, la grabación de imágenes y otras funcionalidades avanzadas.
+              </p>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+    </div>
+
+
+    <div class="container-fluid" id="contacto" style="background-color: white;">
+
+      <div class="row" style="padding-top: 2rem;">
+        <div class="col-sm-6">
+          <div class="row">
+            <div class="col text-center" style="padding-top: 6rem;">
+              <img src="images/contacto.png" class="miimg">
+              <p class="mih2" style="padding-top: 4rem;"> Conéctate con Nosotros</p>
+              <p
+                style="color:black;font-size:1.1rem;font-weight: 400;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 2rem;padding-bottom: 1rem">
+                Visítanos para conocer más sobre nuestros servicios y soluciones y recibe asesoría personalizada.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class="row ">
+            <div class="col text-center">
+              <p
+                style="color:rgb(31, 108, 223);font-size:1.3rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+                Escanea el código QR :</p>
+              <p>
+                <img src="images/qrpcwolf.jpg" style="max-width: 60%; border-radius: 5%;"
+                  class="rounded-1 border border-success">
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+
+    
+
+
+
+    <!-- Pie de pagina -->
+    <div class="container-fluid" style="background-color: #e8f7ff;">
+      <div class="row" style="padding-top: 2rem;">
+        <div class="col text-center">
+          <p>© 2025 PcWolf. Todos los derechos reservados.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col text-center  ">
+          <a href="https://api.whatsapp.com/send/?phone=56942385921&text&type=phone_number&app_absent=0">
+            <img src="images/whatsapp.png" style="max-width: 5%; border-radius: 3%;">
+          </a>
+          <a href="https://www.instagram.com/pcwolflatam/">
+            <img src="images/instagram.png" style="max-width: 5%; border-radius: 3%;">
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- Pie de pagina fin --> 
+  </div>
+</body>
+
+</html>
