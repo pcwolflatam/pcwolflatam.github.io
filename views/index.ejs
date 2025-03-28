@@ -33,7 +33,12 @@
     href="https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-
+    <script>
+        function cerrar() {
+          let navbar = document.querySelector(".navbar-toggler");
+          navbar.click();
+        }
+    </script>
 </head>
 <body>
   <div class="container-fluid" style="background-image: url('images/banner.jpg'); background-size: 100vw 100vh;">
@@ -48,7 +53,7 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav mr-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Inicio <span class="sr-only">(current)</span></a>
+            <a class="nav-link" href="#"onclick="cerrar()">Inicio <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item dropdown">
             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
@@ -56,17 +61,17 @@
               Servicios
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" style="font-size:small;" href="#software">Software</a>
-              <a class="dropdown-item" style="font-size:small;" href="#hardware">Hardware</a>
+              <a class="dropdown-item" style="font-size:0.8rem ;font-family:'Lucida Grande', Helvetica, Arial, sans-serif;" href="#software" onclick="cerrar()">Software</a>
+              <a class="dropdown-item" style="font-size:0.8rem;" href="#hardware"  onclick="cerrar()">Hardware</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" style="font-size:small;" href="#cctv">Sistemas de Seguridad</a>
+              <a class="dropdown-item" style="font-size:0.8rem;" href="#cctv" onclick="cerrar()">Sistemas de Seguridad</a>
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Productos</a>
+            <a class="nav-link" href="#" onclick="cerrar()">Productos</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#contacto">Contactanos</a>
+            <a class="nav-link" href="#contacto" onclick="cerrar()">Contacto</a>
           </li>
         </ul>
       </div>
@@ -307,22 +312,22 @@
             Comprometidos con la Excelencia Tecnológica</p>
           <p class="mih2">Nuestra Misión</p>
           <p
-            style="color:black;font-size:1.2rem;font-weight: 200;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+            style="color:black;font-size:1.2rem;padding-bottom: 1rem">
             En PcWolf, nuestra misión es proporcionar soluciones tecnológicas que impulsen tu productividad y
             seguridad.</p>
           <p
-            style="color:black;font-size:1.2rem;font-weight: 200;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
+            style="color:black;font-size:1.2rem;padding-bottom: 1rem">
             Trabajamos con pasión para &nbsp garantizar que cada cliente reciba un servicio personalizado y de
             calidad.</p>
           <p
-            style="color:black;font-size:1.2rem;font-weight: 200;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 2rem;">
+            style="color:black;font-size:1.2rem;padding-bottom: 2rem;">
             Creemos en la innovación constante como motor para ofrecerte las mejores herramientas tecnológicas.</p>
           <hr>
           <div class="row" style="padding-top: 1rem;">
             <div class="col-sm-3 text-left">
               <p
                 style="color:rgb(102, 102, 102);font-size:1rem;font-weight: 600;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-bottom: 1rem">
-                Clientes Satifechos</p>
+                Clientes Satisfechos</p>
             </div>
             <div class="col-sm-3 text-left">
               <p
@@ -353,11 +358,11 @@
       <div class="row">
         
         <div class="col" >
-          <table class="card table table-bordered table-borderless">
-            <thead>
+          <table class="table table-striped table-hover">
+            <thead style="background-color: navy;">
               <tr>
-                <th scope="col"><strong>Nro.</strong></th>
-                <th scope="col"><strong>Descripción</strong></th>
+                <th scope="col" style="color: white;"><strong>Nro.</strong></th>
+                <th scope="col" style="color: white;"><strong>Descripción</strong></th>
 
               </tr>
             </thead>
@@ -444,11 +449,11 @@
       <div class="row">
         
         <div class="col">
-          <table class="card table table-bordered table-borderless" >
-            <thead>
+          <table class="table table-striped table-hover" >
+            <thead style="background-color: navy;">
               <tr>
-                <th scope="col"><strong>Nro.</strong></th>
-                <th scope="col"><strong>Descripción</strong></th>
+                <th scope="col" style="color: white;"><strong>Nro.</strong></th>
+                <th scope="col"  style="color: white;"><strong>Descripción</strong></th>
 
             </thead>
             <tbody>
@@ -569,8 +574,8 @@
             <div class="col text-center" style="padding-top: 6rem;">
               <img src="images/contacto.png" class="miimg">
               <p class="mih2" style="padding-top: 4rem;"> Conéctate con Nosotros</p>
-              <p
-                style="color:black;font-size:1.1rem;font-weight: 400;font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;padding-left: 2rem;padding-bottom: 1rem">
+              <p class="mip2"
+                style="color:black;padding-left: 2rem;padding-bottom: 1rem">
                 Visítanos para conocer más sobre nuestros servicios y soluciones y recibe asesoría personalizada.</p>
             </div>
           </div>
